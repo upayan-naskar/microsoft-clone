@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Poppins;
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 50px;
+    width: 100%;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.nav-left {
+    display: flex;
+    margin-left: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+#user {
+    display: none;
+}
+
+.nav-left a {
+    text-decoration: none;
+    font-family: Roboto;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.icon {
+    margin-left: 5px;
+}
+
+.nav-right {
+    display: flex;
+    margin-left: 20px;
+    margin-left: 350px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-family: Roboto;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero-sec {
+    background-image: url('/img/hero-sec-img1.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    font-family: Poppins;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.hero-img1 {
+    margin-right: 50px;
+}
+
+.hero {
+    height: 190px;
+    background-color: #ffffff;
+    margin: 30px;
+    display: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #0067b8;
+    color: white;
+    font-family: Poppins;
+    font-weight: bold;
+    border: none;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card {
+    margin: 20px;
+    justify-content: center;
+}
+
+.sec2-card1 img {
+    margin-left: 85px;
+}
+
+.sec2-card2 img {
+    margin-left: 60px;
+}
+
+.sec2-card3 img {
+    margin-left: 85px;
+}
+
+.sec2-card4 img {
+    margin-left: 30px;
+}
+
+.sec3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sec3-card {
+    height: 450px;
+    width: 350px;
+    padding: 10px;
+}
+
+.sec3-card a {
+    text-decoration: none;
+}
+
+.sec4-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.sec4 {
+    background-image: url('/img/sec4-win11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4-media {
+    height: 400px;
+    background-color: #ffffff;
+    margin: 30px;
+    display: none;
+}
+
+.sec4-inner {
+    color: white;
+    margin-right: 800px;
+}
+
+.sec5 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sec5-card {
+    height: 450px;
+    width: 350px;
+    padding: 10px;
+}
+
+.sec5-card a {
+    text-decoration: none;
+}
+
+.follow {
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.follow p {
+    margin-right: 20px;
+}
+
+.follow i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+footer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid rgb(0, 52, 75);
+}
+
+footer h4 {
+    margin-left: 10px;
+}
+
+/* Making the website "Responsive" */
+
+@media only screen and (max-width: 770px) {
+    .navbar {
+        height: 50px;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .nav-logo img {
+        width: 100px;
+    }
+
+    .nav-left {
+        display: none;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    #user {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-left: 100px;
+    }
+
+    .hero-sec {
+        height: 220px;
+    }
+
+    .hero-img1 {
+        display: none;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .sec2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec3-card {
+        margin: 0;
+    }
+
+    .sec4-media {
+        display: block;
+    }
+
+    .sec5 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .follow {
+        display: flex;
+        font-style: 15px;
+        margin-left: 20px;
+    }
+
+    footer {
+        margin-left: 50px;
+    }
+
+    .sec4 {
+        background-image: url('/img/sec4-win11.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 212px;
+        width: 336px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        height: 100px;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 100px;
+        margin-left: 10px;
+    }
+
+    .nav-logo img {
+        width: 200px;
+        margin-left: 150px;
+    }
+
+    .nav-left {
+        display: none;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    #user {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-left: 250px;
+    }
+
+    .hero-img1 {
+        display: none;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .sec2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec5 {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .sec4 {
+        background-image: url('/img/sec4-win11.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 800px;
+    }
+
+    .sec4-inner {
+        display: none;
+    }
+
+    .sec4-media {
+        display: block;
+    }
+
+    footer {
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        height: 100px;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 100px;
+        margin-left: 10px;
+    }
+
+    .nav-logo img {
+        width: 200px;
+        margin-left: 150px;
+    }
+
+    .nav-left {
+        display: none;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    #user {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-left: 250px;
+    }
+
+    .hero-img1 {
+        display: none;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .sec2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sec3 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sec5 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sec4 {
+        background-image: url('/img/sec4-win11.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 800px;
+    }
+
+    .sec4-inner {
+        display: none;
+    }
+
+    .sec4-media {
+        display: block;
+    }
+
+    footer {
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: Poppins;
+    }
+    .navbar{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+    .nav-logo img{
+        margin: 0;
+    }
+    .nav-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    #user {
+        display: none;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .hero-sec {
+        background-image: url('/img/hero-sec-img1.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        font-family: Poppins;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .hero-img1 {
+        display: block;
+        margin-right: 50px;
+    }
+
+    .hero {
+        height: 190px;
+        background-color: #ffffff;
+        margin: 30px;
+        display: none;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #0067b8;
+        color: white;
+        font-family: Poppins;
+        font-weight: bold;
+        border: none;
+    }
+
+    .sec2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .card {
+        margin: 20px;
+        justify-content: center;
+    }
+
+    .sec2-card1 img {
+        margin-left: 85px;
+    }
+
+    .sec2-card2 img {
+        margin-left: 60px;
+    }
+
+    .sec2-card3 img {
+        margin-left: 85px;
+    }
+
+    .sec2-card4 img {
+        margin-left: 30px;
+    }
+
+    .sec3 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .sec3-card {
+        height: 450px;
+        width: 350px;
+        padding: 10px;
+    }
+
+    .sec3-card a {
+        text-decoration: none;
+    }
+
+    .sec4-outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .sec4 {
+        background-image: url('/img/sec4-win11.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec4-media {
+        height: 400px;
+        background-color: #ffffff;
+        margin: 30px;
+        display: none;
+    }
+
+    .sec4-inner {
+        display: block;
+        color: white;
+        margin-right: 800px;
+    }
+
+    .sec5 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .sec5-card {
+        height: 450px;
+        width: 350px;
+        padding: 10px;
+    }
+
+    .sec5-card a {
+        text-decoration: none;
+    }
+
+    .follow {
+        margin-left: 70px;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .follow p {
+        margin-right: 20px;
+    }
+
+    .follow i {
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    footer {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 250px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: 2px solid rgb(0, 52, 75);
+    }
+
+    footer h4 {
+        margin-left: 10px;
+    }
+}
